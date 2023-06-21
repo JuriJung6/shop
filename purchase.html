@@ -4,6 +4,7 @@
 <head>
   <script src="assets/js/color-modes.js"></script>
   <script src="js/index.js"></script>
+  <script src="js/purchase.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
@@ -98,7 +99,7 @@
   <link href="pricing.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="getProducts()">
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="check2" viewBox="0 0 16 16">
       <path
@@ -203,13 +204,8 @@
       </div>
     </header>
     <main>
-        Id <br><br>
-        Korean Name <br><br>
-        English Name <br><br>
-        Image <br><br>
-        Description <br><br>
-        Roasting Date <br><br>
-        Price <br><br><br><br>
+      <div id="productArea" class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        </div>
 
         <label for="category">원두 원산지 선택</label>
     <select class="form-select" aria-label="Default select example">
